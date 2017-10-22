@@ -1,0 +1,27 @@
+{
+  "name": "donategoldme",
+  "version": "0.1.0",
+  "description": "github page for manual of use service donategoldme",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donategoldme"
+  },
+  "keywords": [
+    "donate"
+  ],
+  "author": "FireGM",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.6"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.8.1"
+  }
+}
