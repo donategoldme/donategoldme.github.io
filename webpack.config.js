@@ -1,4 +1,7 @@
 var webpack = require('webpack');
+var path = require('path');
+
+var APP_DIR = path.resolve(__dirname, 'src/');
 
 module.exports = {
   context: __dirname,
@@ -6,21 +9,25 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: __dirname + "/dist",
+    publicPath: "/dist/",
     filename: "bundle.js"
   },
   module:{
-    // loaders: [
-    //   {test : /\.css$/, loader: 'style!css!'}
-    // ],
-    rules: [{
+    loaders: [
+      { 
+        test: /\.jsx?$/,
+        exclude: /node_modules/, 
+        loader: "babel-loader", 
+    },
+    {
       test: /\.scss$/,
-      use: [{
+      loaders: [{
           loader: "style-loader"
       }, {
           loader: "css-loader"
       }, {
           loader: "sass-loader"
-      }]
-    }]
-  }
+      }],
+    }],
+  },
 }

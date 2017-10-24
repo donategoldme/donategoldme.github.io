@@ -1,0 +1,10 @@
+import React from 'react';
+import { MainRoute } from '../Routes';
+
+export const App = () => {
+  return (
+    <div>
+      <MainRoute />
+    </div>
+  )
+}
