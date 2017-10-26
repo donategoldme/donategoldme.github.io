@@ -3,7 +3,7 @@ import { MainRoute } from '../Routes';
 
 export const App = () => {
   return (
-    <div>
+    <div class="container">
       <MainRoute />
     </div>
   )

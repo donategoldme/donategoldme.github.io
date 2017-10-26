@@ -31,7 +31,7 @@ module.exports = (env) => {
           }],
         }],
     },
-    plugins: !env.dev ? [
+    plugins: env.dev=="false" ? [
       new webpack.optimize.UglifyJsPlugin({
         minimize: true,
         warnings: false,
