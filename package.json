@@ -4,8 +4,8 @@
   "description": "github page for manual of use service donategoldme",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server --env.dev"
+    "build": "webpack --env.dev=false",
+    "dev": "webpack-dev-server --env.dev=true"
   },
   "repository": {
     "type": "git",
